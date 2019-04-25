@@ -9,3 +9,7 @@ variable "aws_secret_key" {
 variable "region" {
   description = "region"
 }
+
+variable "cluster_id" {
+  description = "Id to assign the new cluster"
+}
