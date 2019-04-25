@@ -17,3 +17,7 @@ variable "cluster_id" {
 variable "namespace" {
   description = "namespace"
 }
+
+variable "ssh_key_name" {
+  description = "AWS ssh keyname"
+}
