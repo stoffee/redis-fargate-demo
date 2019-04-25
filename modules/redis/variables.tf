@@ -23,7 +23,7 @@ variable "cidr_blocks" {
 
 variable "namespace" {
   description = "Default namespace"
-  default = "divvy-example"
+  default = "cd-redis-fargate-demo"
 }
 
 variable "cluster_id" {
