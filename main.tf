@@ -30,4 +30,5 @@ terraform {
   aws_secret_key = "${var.aws_secret_key}"
   region = "${var.region}"
   cluster_id = "${var.cluster_id}"
+  namespace = "${var.namespace}"
 }

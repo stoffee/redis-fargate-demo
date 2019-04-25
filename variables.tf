@@ -13,3 +13,7 @@ variable "region" {
 variable "cluster_id" {
   description = "Id to assign the new cluster"
 }
+
+variable "namespace" {
+  description = "namespace"
+}
