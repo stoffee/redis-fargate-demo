@@ -1,11 +1,3 @@
-variable "aws_access_key" {
-  description = "access key"
-}
-
-variable "aws_secret_key" {
-  description = "secret key"
-}
-
 variable "vpc_cidr_block" {
   description = "The top-level CIDR block for the VPC."
   default     = "10.1.0.0/16"
