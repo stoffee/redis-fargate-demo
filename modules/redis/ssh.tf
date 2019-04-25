@@ -33,7 +33,13 @@ resource "aws_instance" "ssh_host" {
   vpc_security_group_ids = ["${aws_security_group.default.id}"]
   user_data              = "${data.template_file.startup.rendered}"
 
-  tags = "${map(
-    "Name", "${var.namespace}-ssh-host",
-  )}"
+#  tags = "${map(
+#  )}"
+
+  tags = {
+    Name = "${var.namespace}-ssh-host",
+    Owner = "cdunlap@hashicorp.com"
+    TTL = "24h"
+      }
+
 }
