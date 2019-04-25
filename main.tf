@@ -26,8 +26,8 @@ terraform {
   source = "git::https://github.com/stoffee/redis-fargate-demo.git//modules/redis"
 
 
-#  access_key = "${var.aws_access_key}"
-#  secret_key = "${var.aws_secret_key}"
+  aws_access_key = "${var.aws_access_key}"
+  aws_secret_key = "${var.aws_secret_key}"
   region = "${var.region}"
 #  cluster_id = "${var.cluster_id}"
 }
