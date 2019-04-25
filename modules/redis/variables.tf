@@ -30,16 +30,16 @@ variable "cluster_id" {
   description = "Id to assign the new cluster"
 }
 
-variable "public_key_path" {
-  description = "Path to public key for ssh access"
-  default     = "~/.ssh/id_rsa.pub"
+
+variable "ssh_key_name" {
+  description = "AWS ssh keyname"
 }
+#variable "public_key_path" {
+#  description = "Path to public key for ssh access"
+#  default     = "~/.ssh/id_rsa.pub"
+#}
 
 variable "node_groups" {
   description = "Number of nodes groups to create in the cluster"
   default     = 3
-}
-
-variable "ssh_key_name" {
-  description = "AWS ssh keyname"
 }

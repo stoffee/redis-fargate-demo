@@ -31,4 +31,5 @@ terraform {
   region = "${var.region}"
   cluster_id = "${var.cluster_id}"
   namespace = "${var.namespace}"
+  ssh_key_name = "${var.ssh_key_name}"
 }
