@@ -12,7 +12,7 @@ variable "aws_region" {
   default     = "us-west-2"
 }
 
-variable "aws_region" {
+variable "region" {
   description = "The AWS region things are created in"
   default     = "us-west-2"
 }
